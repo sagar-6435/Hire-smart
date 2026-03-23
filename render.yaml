@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: hiresmart-ai-backend
+    name: hiresmart-backend
     runtime: python
     rootDir: backend
     buildCommand: pip install -r requirements.txt

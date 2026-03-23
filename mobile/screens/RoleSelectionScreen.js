@@ -47,7 +47,7 @@ const RoleSelectionScreen = ({ navigation }) => {
     <View style={styles.container}>
       {/* Header */}
       <View style={styles.header}>
-        <Text style={styles.appName}>🧠 HireSmart AI</Text>
+        <Text style={styles.appName}>🧠 HireSmart</Text>
         <Text style={styles.tagline}>Intelligent Candidate Screening</Text>
       </View>
 

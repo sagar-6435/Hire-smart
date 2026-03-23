@@ -219,7 +219,7 @@ def extract_github_username(text: str):
 def health():
     return jsonify({
         'status': 'ok',
-        'service': 'HireSmart AI Backend',
+        'service': 'HireSmart Backend',
         'model_loaded': _model is not None,
     })
 
