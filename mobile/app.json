@@ -1,0 +1,37 @@
+{
+  "expo": {
+    "name": "HireSmart AI",
+    "slug": "hiresmart-ai",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0F0F1A"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.hiresmart.ai"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0F0F1A"
+      },
+      "package": "com.hiresmart.ai"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-document-picker"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "ce170716-10f2-4b6f-96d0-8c70cfcbc4be"
+      }
+    }
+  }
+}
