@@ -1,12 +1,18 @@
 /**
  * API Service Layer
  * Handles all backend communication for HireSmart AI
+ *
+ * 🔧 To change the backend URL:
+ *    Edit mobile/.env → EXPO_PUBLIC_API_URL=<your-url>
+ *
+ *    Local dev  : http://192.168.x.x:5000
+ *    Production : https://hiresmart-ai-backend.onrender.com
  */
 
 import axios from 'axios';
 
-// Base URL – your machine's local IP (detected via ipconfig)
-const BASE_URL = 'http://10.92.22.96:5000';
+// Reads from mobile/.env → EXPO_PUBLIC_API_URL
+const BASE_URL = process.env.EXPO_PUBLIC_API_URL || 'http://10.92.22.96:5000';
 
 const api = axios.create({
   baseURL: BASE_URL,

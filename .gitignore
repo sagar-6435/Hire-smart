@@ -27,6 +27,7 @@ mobile/.expo/
 mobile/.expo-shared/
 mobile/dist/
 mobile/.env
+!mobile/.env.example
 
 # OS
 .DS_Store
