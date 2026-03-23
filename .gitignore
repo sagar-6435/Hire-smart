@@ -1,18 +1,21 @@
-# Python
+# ─── Python / Backend ─────────────────────────────────────────────────────────
 __pycache__/
 *.py[cod]
 *.pyo
 *.pyd
-.Python
 *.egg-info/
-dist/
-build/
+*.log
 venv/
 env/
-.env
-*.log
+.Python
 
-# Inspection / temp scripts
+# ─── Secrets ──────────────────────────────────────────────────────────────────
+.env
+.env.local
+.env.*.local
+!**/.env.example          # always keep example files
+
+# ─── Temp / debug scripts ─────────────────────────────────────────────────────
 inspect_models.py
 inspect2.py
 output.txt
@@ -20,16 +23,34 @@ output_utf8.txt
 i3.txt
 inspect_out.txt
 inspect2_out.txt
+err.txt
 
-# Node / Expo
+# ─── Node / Expo ──────────────────────────────────────────────────────────────
 mobile/node_modules/
 mobile/.expo/
 mobile/.expo-shared/
+mobile/web-build/
 mobile/dist/
-mobile/.env
-!mobile/.env.example
+mobile/.metro-health-check*
+mobile/npm-debug.*
+mobile/yarn-debug.*
+mobile/yarn-error.*
+mobile/*.tsbuildinfo
+mobile/expo-env.d.ts
+mobile/doctor_out.txt
 
-# OS
+# ─── Native build artifacts ───────────────────────────────────────────────────
+mobile/android/
+mobile/ios/
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.pem
+.kotlin/
+
+# ─── OS ───────────────────────────────────────────────────────────────────────
 .DS_Store
 Thumbs.db
 desktop.ini

@@ -1,15 +1,21 @@
 # Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
 
-# dependencies
+# ─── Dependencies ─────────────────────────────────────────────────────────────
 node_modules/
 
-# Expo
+# ─── Expo ─────────────────────────────────────────────────────────────────────
 .expo/
 dist/
 web-build/
 expo-env.d.ts
 
-# Native
+# ─── Environment / Secrets ────────────────────────────────────────────────────
+.env
+.env.local
+.env.*.local
+!.env.example             # always keep the template
+
+# ─── Native ──────────────────────────────────────────────────────────────────
 .kotlin/
 *.orig.*
 *.jks
@@ -17,25 +23,30 @@ expo-env.d.ts
 *.p12
 *.key
 *.mobileprovision
+*.pem
 
-# Metro
+# ─── Generated native folders ─────────────────────────────────────────────────
+/ios
+/android
+
+# ─── Metro ────────────────────────────────────────────────────────────────────
 .metro-health-check*
 
-# debug
+# ─── Debug logs ───────────────────────────────────────────────────────────────
 npm-debug.*
 yarn-debug.*
 yarn-error.*
+*.log
 
-# macOS
-.DS_Store
-*.pem
-
-# local env files
-.env*.local
-
-# typescript
+# ─── TypeScript ───────────────────────────────────────────────────────────────
 *.tsbuildinfo
 
-# generated native folders
-/ios
-/android
+# ─── OS ───────────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ─── EAS / build outputs ──────────────────────────────────────────────────────
+*.ipa
+*.apk
+*.aab
